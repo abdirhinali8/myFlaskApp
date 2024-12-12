@@ -1,0 +1,6 @@
+{% macro render_field(field, class=None, id=None) %}
+  <div class="form-group">
+    <label for="{{ field.id }}">{{ field.label }}</label>
+    {{ field(class=class, id=id) }}  <!-- Pass the class and id directly -->
+  </div>
+{% endmacro %}
